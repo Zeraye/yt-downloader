@@ -22,12 +22,10 @@ TEMPLATE_DIR = Path.joinpath(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '$y^yrhli_4%%g!^##&qo6os4u_ye+5n4t0y7d5i+p1^%q1tl!b'
-# SECRET_KEY = os.environ.get('YTDOWNLOADER_SECRET_KEY')
+SECRET_KEY = os.environ.get('YTDOWNLOADER_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
+DEBUG = os.environ.get('DEBUG_VALUE') == 'True'
 
 ALLOWED_HOSTS = ['*']
 
