@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Downloader</title>
+</head>
+
+<body>
+    {% for f in file %}
+    <h2>{{f.ytlink}}</h2>
+    <a href="{{f.ytfile.url}}" download>Download</a>
+    {% endfor %}
+</body>
+
+</html>

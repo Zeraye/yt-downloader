@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Downloader</title>
+</head>
+
+<body>
+    <h1>Put your yt-link here</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <input id="ytlink" type="text" name="ytlink">
+        <input type="submit" value="get file">
+    </form>
+</body>
+
+</html>
